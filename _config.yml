@@ -1,0 +1,39 @@
+permalink: /blog/:year/:month/:title.html 
+include: ['.htaccess']
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
+markdown: kramdown
+#highlights: pygments
+#url: 
+#lsi: false
+#safe: true
+#timezone: Asia/Shanghai
+#auto: false 
+baseurl: "/ztwu"
+url: "http://124.127.117.203:88"
+
+destination: /var/www/html/ztwu
+paginate: 8
+paginate_path: "page:num"
+
+kramdown:
+  auto_ids: true,
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+JB :
+  IMAGE_PATH : http://coolshell.info/images
+
+# presonal config
+domain: http://coolshell.info
+title: ztwu
+description: Draw my life with code
+author: Lippi.OuYang
+email: ztwu0725@gmail.com
+github: AresTao
+
+config:
+  js_dir: 
+  img_dir:
+  css_dir:
