@@ -26,10 +26,9 @@ JB :
   IMAGE_PATH : http://coolshell.info/images
 
 # presonal config
-domain: http://coolshell.info
 title: ztwu
 description: Draw my life with code
-author: Lippi.OuYang
+author: ztwu
 email: ztwu0725@gmail.com
 github: AresTao
 
