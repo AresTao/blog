@@ -9,9 +9,9 @@ Hibernate中提供了两级Cache，第一级别的缓存是Session级别的缓�
 
 **一级缓存和二级缓存的要点**
 
-![](/images/hibernate1.png)
-![](/images/hibernate2.png)
-![](/images/hibernate3.png)
+![]({{ site.baseurl }}/images/hibernate1.png)
+![]({{ site.baseurl }}/images/hibernate2.png)
+![]({{ site.baseurl }}/images/hibernate3.png)
 
 **使用二级缓存**
 
