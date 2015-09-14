@@ -18,6 +18,7 @@
     <link href="{{ site.baseurl }}/css/index.css" rel="stylesheet">
 	<!-- pagments CSS-->
 	<link href="{{ site.baseurl }}/css/pygments.css" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ site.baseurl}}/images/favicon.ico">
         <!-- jQuery Version 1.11.0 -->
     <script src="{{ site.baseurl }}/js/jquery-1.11.0.js"> </script>
     <!-- Bootstrap Core JavaScript -->
@@ -54,9 +55,7 @@
             <span class="icon-bar">
             </span>
           </button>
-          <a class="navbar-brand" href="{{ site.baseurl }}/index.html">
-            {{ site.title }}
-          </a>
+          <a href="{{ site.baseurl }}/about.html"><img src="{{ site.baseurl }}/images/headphoto.jpg"></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -69,19 +68,6 @@
     <!-- Page Content -->
     <div class="container">
       <div class="row">
-        <!-- Blog Entries Column -->
-        <div class="col-md-8">
-          {{ content }}
-        </div>
-
-	 <div id="top" data-toggle="tooltip" data-placement="left" title="回到顶部">
-	      <a href="javascript:;">
-		<div class="arrow"></div>
-		<div class="stick"></div>
-	      </a>
-	    </div>
-
-        <!-- Blog Sidebar Widgets Column -->
         <div class="col-md-4">
           <!-- Blog Search Well -->  
             {% include search.html %}
@@ -95,6 +81,20 @@
           <!-- Side Widget Well -->
            
         </div>
+
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
+          {{ content }}
+        </div>
+
+	 <div id="top" data-toggle="tooltip" data-placement="left" title="回到顶部">
+	      <a href="javascript:;">
+		<div class="arrow"></div>
+		<div class="stick"></div>
+	      </a>
+	    </div>
+
+        <!-- Blog Sidebar Widgets Column -->
       </div>
 
 

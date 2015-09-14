@@ -13,22 +13,30 @@ tags : [jekyll]
 
 我安装的环境是centos6.5 64位。
 由于jekyll基于ruby，所以要先安装ruby、rubygems、nodejs、libyaml、libyaml-devel和make
-#sudo yum install -y ruby ruby-devel rubygems make nodejs libyaml libyaml-devel
-
+<code>
+# sudo yum install -y ruby ruby-devel rubygems make nodejs libyaml libyaml-devel
+</code>
 然后安装jekyll
-#gem install jekyll
+<code>
+# gem install jekyll
+</code>
 
 这时会报错，yum install安装的ruby版本是1.8.7。但是jekyll要求安装至少要1.9.2。所以就要用ruby源码安装，我安装的是1.9.3版本。
 https://www.ruby-lang.org/en/news/2013/02/22/ruby-1-9-3-p392-is-released/可以下载。
+<code>
+# tar xvfz ruby-version.tar.gz
+# cd ruby-version/
+# ./configure 
+# make 
+</code>
 
-tar xvfz ruby-version.tar.gz
-cd ruby-version/
-./configure 
-make 
 这时会报错，应该是跟openssl有关，因为新版本的openssl去掉了一些东西。按照如下修改：
-vim ext/openssl/ossl_pkey_ec.c
-![](/images/jekyll1.jpg)
-![](/images/jekyll2.jpg)
+<code>
+# vim ext/openssl/ossl_pkey_ec.c
+</code>
+
+![]({{ site.baseurl }}/images/jekyll1.jpg)
+![]({{ site.baseurl }}/images/jekyll2.jpg)
 
 重新make
 然后make install即可。
@@ -39,10 +47,13 @@ vim ext/openssl/ossl_pkey_ec.c
 
 好啦，jekyll安装好了。
 基本用法：
-mkdir blog
-cd blog
-jeky new mysite
-cd mysite
+<code>
+# mkdir blog
+# cd blog
+# jeky new mysite
+# cd mysite
+</code>
+
 该文件里已经默认生成了一些文件，_config.yml是配置文件，在文件中增加destination字段，指向apache或httpd的代码路径。
 
 运行blog
