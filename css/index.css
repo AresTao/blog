@@ -119,6 +119,8 @@ nav{
 
 	border-radius: 0;
 }
+.navbar-header img {width:40px;height:auto;}
+
 .navbar-nav li{
 	width: 95px;
 	text-align: center;
@@ -184,9 +186,9 @@ ul.posts li {
     transition: all .3s linear;
 }
 ul.posts li:hover {
-    padding-left: 30px;
+/*    padding-left: 30px;
     border-left: 15px solid #CE2323;
-
+*/
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear;
@@ -240,12 +242,12 @@ ul.posts .date {
 .categories-list-item:hover{
 	/*background-color: rgba(0,0,10,0.075);
 	color: #983;*/
-	 padding-left: 30px;
+	/* padding-left: 30px;
    	 border-left: 15px solid #CE2323;
-
-    	-webkit-transition: all .3s linear;
+*/
+    	/*-webkit-transition: all .3s linear;
     	-o-transition: all .3s linear;
-    	transition: all .3s linear;
+    	transition: all .3s linear;*/
 }
 .categories-list-item .my-badge{
 	font-size: 12px;
@@ -255,17 +257,17 @@ ul.posts .date {
 	padding: 0 7px 1px 7px;
 	border-radius: 9px;
 	float: right;
-	transition:0.4s ease;
+	/*transition:0.4s ease;
 	-webkit-transition:0.4s ease;
 	-moz-transition:0.4s ease;
-	-o-transition:0.4s ease;
+	-o-transition:0.4s ease;*/
 }
 .categories-list-item:hover .my-badge{
-	-webkit-transform:rotate(360deg) scale(1.2);
+	/*-webkit-transform:rotate(360deg) scale(1.2);
 	-moz-transform:rotate(360deg) scale(1.2);
 	-o-transform:rotate(360deg) scale(1.2);
 	-ms-transform:rotate(360deg) scale(1.2);
-	transform:rotate(360deg) scale(1.2);
+	transform:rotate(360deg) scale(1.2);*/
 }
 
 /* shadow */
@@ -290,17 +292,17 @@ ul.posts .date {
 	left: 9%;
 	bottom: 2%;
 	background: transparent;
-	-webkit-box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+/*	-webkit-box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 	-moz-box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 	-o-box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 	box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-
+*/
 	/* 向左倾斜12度，再旋转4度 */
-	-webkit-transform:skew(-11deg) rotate(-4deg);
+/*	-webkit-transform:skew(-11deg) rotate(-4deg);
 	-moz-transform:skew(-11deg) rotate(-4deg);
 	-o-transform:skew(-11deg) rotate(-4deg);
 	-ms-transform:skew(-11deg) rotate(-4deg);
-	transform:skew(-11deg) rotate(-4deg);
+	transform:skew(-11deg) rotate(-4deg);*/
 }
 .shadow-corner-curl:after{
 	content:"";
@@ -311,17 +313,17 @@ ul.posts .date {
 	right: 9%;
 	bottom: 2%;
 	background: transparent;
-	-webkit-box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+/*	-webkit-box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 	-moz-box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 	-o-box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 	box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-
+*/
 	/* 向左倾斜12度，再旋转4度 */
-	-webkit-transform:skew(11deg) rotate(4deg);
+/*	-webkit-transform:skew(11deg) rotate(4deg);
 	-moz-transform:skew(11deg) rotate(4deg);
 	-o-transform:skew(11deg) rotate(4deg);
 	-ms-transform:skew(11deg) rotate(4deg);
-	transform:skew(11deg) rotate(4deg);
+	transform:skew(11deg) rotate(4deg);*/
 }
 
 /* footer */
@@ -332,11 +334,11 @@ footer{
 	background: #3f4850;
 	color: #aaa;
 	text-align: center;
-
+/*
 	-webkit-box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
 	-moz-box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
 	-o-box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
-	box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
+	box-shadow: 0 -2px 4px rgba(0,0,0,0.5);*/
 }
 footer a:link {color: #aaa}		/* 未访问的链接 */
 footer a:visited {color: #888}	/* 已访问的链接 */
@@ -605,4 +607,4 @@ blockquote:last-child {
 	}
 }
 
-
+.contentimg img { display:block;width:300px; height:auto;}
