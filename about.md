@@ -8,7 +8,11 @@ title: "关于：About"
 
 >男 | 27岁 （ 1988 年 7 月 25）
 
+>身高：181cm 体重：73kg
+
 >E-mail：wuzhantao0725@163.com
+
+>qq:572188765
 
 >毕业时间： 2015 年 3 月
 
@@ -101,6 +105,9 @@ title: "关于：About"
   <img src="{{ site.baseurl }}/images/about1.jpg">
   <img src="{{ site.baseurl }}/images/about2.jpg">
   <img src="{{ site.baseurl }}/images/about3.jpg">
+  <img src="{{ site.baseurl }}/images/workout.jpg">
+  <img src="{{ site.baseurl }}/images/price.jpg">
+  <img src="{{ site.baseurl }}/images/team.jpg">
 </div>
 
 * 听歌，林肯公园忠实粉丝；
