@@ -1,9 +1,9 @@
 ---
-  layout: post
-  title: YouTube的架构拓展
-  keywords: 架构设计
-  category : 架构
-  tags : [架构设计]
+layout: post
+title: YouTube的架构拓展
+keywords: 架构设计
+category : 架构
+tags : [架构设计]
 ---
 
 在西雅图扩展性的技术研讨会上，YouTube 的 Cuong Do 做了关于 YouTube Scalability 的报告。视频内容在 Google Video 上有(地址)，可惜国内用户看不到。
