@@ -10,7 +10,6 @@ tags : [架构设计]
 电量：对于移动设备最大的瓶颈就是电量了。因为用户不可能随时携带电源，充电宝。所以必须考虑到电量问题。那就要检查我们工程是不是有后台运行，心跳包发送时间是不是合理。
 流量：对于好多国内大部分用户来说可能还在使用2G，流量还是包月30M，那么我们必须站在广大用户角度来考虑问题了。一个包可以解决的就一个包。
 ![]({{site.baseurl}}/images/reducelight.png)
-![]({{site.baseurl}}/images/state.png)
 网络：这个也是IM最核心的内容了，我们要做到在任何网络下能顺畅聊天那就不容易了，好多公司都用的xmpp框架，如果在强网络环境下，xmpp完全没有问题。但是那种弱网络环境下xmpp就束手无策啦，用户体验就很垃圾了。个人觉得xmpp 可以玩玩，但是用来做真正的产品就差远了。如果遇到一个做IM的朋友张口闭口都说xmpp 的话，那么不用沟通了，肯定不是什么好产品。微信、QQ以前也曾用过xmpp，但是最后也放弃了xmpp，就知道xmpp有很多弊端了，还有就是报文太大，好臃肿，浪费流量。为了保证稳定，微信用了长链接和短链接相结合，例如：
 1 、两个域名
 微信划分了http模式（short链接）和 tcp 模式（long 链接），分别应对状态协议和数据传输协议
@@ -115,8 +114,11 @@ Protobuffer是一个类似JSON的一个传输协议，其实也不能说是协�
 ![]({{site.baseurl}}/images/protocol1.png)
 
 高效：弱网络快速的收发
+
 可靠：不会丢消息
+
 易于扩展
+
 协议格式：
 
 ![]({{site.baseurl}}/images/protocol2.png)
@@ -124,13 +126,16 @@ Protobuffer是一个类似JSON的一个传输协议，其实也不能说是协�
 redis协议：
 
 ![]({{site.baseurl}}/images/redis1.png)
+
 ![]({{site.baseurl}}/images/redis2.png)
+
 ![]({{site.baseurl}}/images/messagequeue.png)
+
 ![]({{site.baseurl}}/images/messagequeuetransfer.png)
 
 消息协议：
 
-![]({{site.baseurl}}/images/versionedmessagequeue.png)
+![]({{site.baseurl}}/images/versionedmessage.png)
 
 ![]({{site.baseurl}}/images/versionedmessagetransfer.png)
 
@@ -163,7 +168,9 @@ WNS（wireless network services）
 网络连接：大量长链接管理、链接不上、慢、多地分布
 运营支撑：海量监控、简化问题定位
 登录&安全：登录鉴权、频率控制
+
 ![]({{site.baseurl}}/images/secure.png)
+
 ![]({{site.baseurl}}/images/other.png)
 
 移动互联网特点：
