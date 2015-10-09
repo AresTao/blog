@@ -13,13 +13,15 @@ tags : [架构设计]
     * 峰值每秒钟3万个 HTTP 请求
     * 每秒钟 3Gbit 流量, 近乎375MB
     * 350 台 PC 服务器
-      (数据来源 )
+
+(数据来源 )
 架构示意图如下
 ![]({{site.baseurl}}/images/wiki.png)
 
 GeoDNS
 
-在我写的这些网站架构的 Blog 中，GeoDNS 第一次出现，这东西是啥? "A 40-line patch for BIND to add geographical filters support to the existent views in BIND", 把用户带到最近的服务器。GeoDNS 在 WikiPedia 架构中担当重任当然是由 WikiPedia 的内容性质决定的--面向各个国家，各个地域。
+"A 40-line patch for BIND to add geographical filters support to the existent views in BIND", 把用户带到最近的服务器。GeoDNS 在 WikiPedia 架构中担当重任当然是由 WikiPedia 的内容性质决定的--面向各个国家，各个地域。
+
 负载均衡：LVS
 
 WikiPedia 用 LVS 做负载均衡, 是章文嵩博士发起的项目,也算中国人为数不多的在开源领域的骄傲啦。LVS 维护的一个老问题就是监控了，维基百科的技术人员用的是 pybal.
@@ -36,4 +38,4 @@ MediaWiki 用的DB 是 MySQL. MySQL 在 Web 2.0 技术上的常见的一些扩�
 
 运营这样的站点，WikiPedia 每年的开支是 200 万美元，技术人员只有 6 个，惊人的高效。
 
-[source](http://highscalability.com/wikimedia-architecture):http://highscalability.com/wikimedia-architecture
+source: [http://highscalability.com/wikimedia-architecture](http://highscalability.com/wikimedia-architecture)
